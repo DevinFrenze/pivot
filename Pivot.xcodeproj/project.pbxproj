@@ -13,6 +13,7 @@
 		531644D51ED93C4400195373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531644D41ED93C4400195373 /* Assets.xcassets */; };
 		531644D81ED93C4400195373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531644D61ED93C4400195373 /* LaunchScreen.storyboard */; };
 		531644E31ED93C4400195373 /* PivotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531644E21ED93C4400195373 /* PivotTests.swift */; };
+		531644EE1ED93D2800195373 /* PivotOrientationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531644ED1ED93D2800195373 /* PivotOrientationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		531644DE1ED93C4400195373 /* PivotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PivotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		531644E21ED93C4400195373 /* PivotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PivotTests.swift; sourceTree = "<group>"; };
 		531644E41ED93C4400195373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		531644ED1ED93D2800195373 /* PivotOrientationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PivotOrientationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				531644CD1ED93C4400195373 /* AppDelegate.swift */,
 				531644CF1ED93C4400195373 /* ViewController.swift */,
+				531644ED1ED93D2800195373 /* PivotOrientationView.swift */,
 				531644D11ED93C4400195373 /* Main.storyboard */,
 				531644D41ED93C4400195373 /* Assets.xcassets */,
 				531644D61ED93C4400195373 /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531644EE1ED93D2800195373 /* PivotOrientationView.swift in Sources */,
 				531644D01ED93C4400195373 /* ViewController.swift in Sources */,
 				531644CE1ED93C4400195373 /* AppDelegate.swift in Sources */,
 			);
