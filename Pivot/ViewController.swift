@@ -55,9 +55,9 @@ class ViewController: UIViewController {
         // if the vertical angle between the attitude of gravity and the z-axis is < 45 degrees
         // rotate the attitudes we're comparing 90 degrees along the x-axis
         let angleBetweenGravityAndZ = angleDifference(castCMAccelerationToGLKVector3(current.gravity), GLKVector3Make(0, 0, 1))
-        let vertical = abs(angleBetweenGravityAndZ - Float(M_PI_2)) < Float(M_PI_4)
+        let vertical = abs(angleBetweenGravityAndZ - (.pi / 2)) < (.pi / 4)
         if vertical {
-            let rotation = GLKMatrix3MakeXRotation(Float(M_PI_2))
+            let rotation = GLKMatrix3MakeXRotation(.pi / 2)
             currentRotationMatrix = GLKMatrix3Multiply(currentRotationMatrix, rotation)
             previousRotationMatrix = GLKMatrix3Multiply(previousRotationMatrix, rotation)
         }
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
     private func directionalAngleDifference(_ v1: GLKVector3,_ v2: GLKVector3) -> Float {
         // the directional angle difference between two angles is the difference of their differences with a third angle
         let angleDirectionReferenceVector = extractVectorFromMatrix(
-            GLKMatrix3Multiply(GLKMatrix3MakeZRotation(-Float(M_PI_2)), embedVectorInMatrix(v2))
+            GLKMatrix3Multiply(GLKMatrix3MakeZRotation(-.pi / 2), embedVectorInMatrix(v2))
         )
         return angleDifference(v1, angleDirectionReferenceVector) - angleDifference(v2, angleDirectionReferenceVector)
     }
@@ -122,7 +122,7 @@ class ViewController: UIViewController {
             self.pivotOrientationView.transform = CGAffineTransform(rotationAngle: CGFloat(self.total))
         }
         
-        let rotations = floor(abs(total / (2 * Float(M_PI))))
+        let rotations = floor(abs(total / (2 * .pi)))
         var direction = "left"
         if rotations == 0 {
             rotationsTextView.text = "Balanced"

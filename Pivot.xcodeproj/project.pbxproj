@@ -416,6 +416,7 @@
 				531644E91ED93C4400195373 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		531644EA1ED93C4400195373 /* Build configuration list for PBXNativeTarget "PivotTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +425,7 @@
 				531644EC1ED93C4400195373 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
